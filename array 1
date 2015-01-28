@@ -1,6 +1,7 @@
 Enter file contents here
 // array1.cpp
 // shows days from start of year to date specified
+//Julian Date
 #include <iostream>
 using namespace std; 
 
