@@ -1,0 +1,21 @@
+Enter file contents here
+// array1.cpp
+// shows days from start of year to date specified
+#include <iostream>
+using namespace std; 
+
+int main()
+	{
+	int month, day, totalDays;
+	int daysPerMonth[12] = { 31, 28, 31, 30, 31, 30,
+					31, 31, 30, 31, 30, 31 };
+
+	cout << "\nEnter month (1 to 12): ";  // get date
+	cin >> month;
+	cout << "Enter day (1 to 31): ";
+	cin >> day;
+	totalDays = day;                     // separate days
+	for(int index=0; index<month-1; index++)          // add days each month
+		totalDays += daysPerMonth[index];
+	cout << "Total days from start of year is: " << totalDays;
+	}
